@@ -1,3 +1,3 @@
-export const cssmodulejoin = (cssClasses: Array<string>): string => {
-  return cssClasses.join(' ');
+export const cssmodulejoin = (...args: string[]): string => {
+  return args.join(' ');
 };

@@ -1,21 +1,15 @@
 import {cssmodulejoin} from '.';
 
-const mockCssModuleClasses = {
+const mock = {
   classOne: '.classOne',
   classTwo: '.classTwo',
   classThree: '.classThree',
 };
 
-const mockStyles = [
-  mockCssModuleClasses.classOne,
-  mockCssModuleClasses.classThree,
-  mockCssModuleClasses.classThree,
-];
-
 let multiClasses: string = null;
 
 describe('Test cssmodulejoin', () => {
-  multiClasses = cssmodulejoin(mockStyles);
+  multiClasses = cssmodulejoin(mock.classOne, mock.classTwo, mock.classThree);
 
   it('should be defined', () => {
     expect(multiClasses).toBeDefined();
@@ -26,6 +20,6 @@ describe('Test cssmodulejoin', () => {
   });
 
   it('should return  same length as the array of classes when split', () => {
-    expect(multiClasses.split(' ').length).toBe(mockStyles.length);
+    expect(multiClasses.split(' ').length).toBe(Object.keys(mock).length);
   });
 });

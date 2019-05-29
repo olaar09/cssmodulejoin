@@ -15,5 +15,5 @@ import styles from 'cssfile.module.scss'; //or .css
 # use package (React example)
 
 ```jsx
-<p classNames={cssmodulejoin([styles.blue, styles.green, styles.yellow])} />
+<p classNames={cssmodulejoin(styles.blue, styles.green, styles.yellow)} />
 ```
