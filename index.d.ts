@@ -1,1 +1,1 @@
-export declare const cssmodulejoin: (...args: string[]) => string;
+export declare const cssmodulejoin: (...args: any[]) => string;
