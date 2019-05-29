@@ -1,6 +1,6 @@
 {
   "name": "cssmodulejoin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny js library to join multiple css classes when using css modules (Especially in React)",
   "main": "index.js",
   "scripts": {
