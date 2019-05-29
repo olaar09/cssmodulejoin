@@ -1,19 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var _1 = require(".");
-var mockCssModuleClasses = {
+var mock = {
     classOne: '.classOne',
     classTwo: '.classTwo',
     classThree: '.classThree',
 };
-var mockStyles = [
-    mockCssModuleClasses.classOne,
-    mockCssModuleClasses.classThree,
-    mockCssModuleClasses.classThree,
-];
 var multiClasses = null;
 describe('Test cssmodulejoin', function () {
-    multiClasses = _1.cssmodulejoin(mockStyles);
+    multiClasses = _1.cssmodulejoin(mock.classOne, mock.classTwo, mock.classThree);
     it('should be defined', function () {
         expect(multiClasses).toBeDefined();
     });
@@ -21,6 +16,6 @@ describe('Test cssmodulejoin', function () {
         expect(typeof multiClasses).toBe('string');
     });
     it('should return  same length as the array of classes when split', function () {
-        expect(multiClasses.split(' ').length).toBe(mockStyles.length);
+        expect(multiClasses.split(' ').length).toBe(Object.keys(mock).length);
     });
 });
