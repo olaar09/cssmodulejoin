@@ -1,0 +1,35 @@
+{
+  "name": "cssmodulejoin",
+  "version": "1.0.0",
+  "description": "Tiny js library to join multiple css classes when using css modules (Especially in React)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olaar09/cssmodulejoin.git"
+  },
+  "keywords": [
+    "CSS",
+    "modules",
+    "CSS",
+    "Sass",
+    "SCSS",
+    "React",
+    "AngularJS"
+  ],
+  "author": "Agboola Yusuf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olaar09/cssmodulejoin/issues"
+  },
+  "homepage": "https://github.com/olaar09/cssmodulejoin#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.4.5"
+  }
+}
